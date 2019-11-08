@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.infotechsoft.com/vocab/WFT/wft-external.owl#"
      xml:base="http://www.infotechsoft.com/vocab/WFT/wft-external.owl"
+     xmlns:swo2="http://www.ebi.ac.uk/swo/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:obo2="http://purl.obofoundry.org/obo/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:edamontology="http://edamontology.org/">
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.infotechsoft.com/vocab/WFT/wft-external.owl"/>
     
 
@@ -20,6 +23,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
         <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
         <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
@@ -29,16 +41,6 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label>alternative term</rdfs:label>
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label xml:lang="en">term editor</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
@@ -57,6 +59,7 @@
         <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
@@ -68,7 +71,6 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
@@ -191,6 +193,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>label</rdfs:label>
         <obo:IAO_0000111>label</obo:IAO_0000111>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -202,6 +205,77 @@ We also have the outstanding issue of how to aim different definitions to differ
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136">
+        <rdfs:label>is about</rdfs:label>
+        <obo:IAO_0000115>&#39;is about&#39; relates an information entity to other entities in which the information entity holds some information which dscribes some facet of the other entity, such as the arrow direction on a sign.</obo:IAO_0000115>
+        <obo:IAO_0000119>IAO</obo:IAO_0000119>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000741 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
+        <rdfs:label>is encoded in</rdfs:label>
+        <obo:IAO_0000112>Linking a type of software to its particular programming language.</obo:IAO_0000112>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000115>Is encoded in is an &quot;is about&quot; relationship which describes the type of encoding used for the referenced class.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000086">
+        <rdfs:label>has specified data input</rdfs:label>
+        <obo:IAO_0000115>The relationship between input data which is permitted to a piece of software.</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000087">
+        <rdfs:label xml:lang="en">has specified data output</rdfs:label>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">The relationship between a piece of software and the data that it is possible to output.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004002 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004002">
+        <rdfs:label>has format specification</rdfs:label>
+        <obo:IAO_0000115>Has format specification is a type of &quot;is encoded in&quot; relationship which specifically describes the relationship between data and a data format specification.</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000741"/>
+    </owl:ObjectProperty>
     
 
 
@@ -702,7 +776,6 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
 
@@ -746,7 +819,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&#39;t realizable. However this name isn&#39;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&#39;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
 
@@ -755,9 +827,7 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: term imported from OBI_0000187, which had original definition &quot;A data format specification is a plan which organizes
 information. Example: The ISO document specifying what encompasses an
 XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
@@ -770,7 +840,6 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
 
